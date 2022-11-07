@@ -92,7 +92,7 @@ const lwenv = (input) => {
     }
 
     if (isWindows() && (checkMode(envPath, num.S_IRUSR) !== num.S_IRUSR || checkMode(envPath, num.S_IWUSR) == num.S_IWUSR)) {
-        throw new Error(`File permissions are unsafe. Make them 555 '${envPath}'`);
+        throw new Error(`File permissions are unsafe. Make them readonly and Administrator as owner '${envPath}'`);
     }
     else if (!isWindows() && checkMode(envPath, permissionMask) !== ownerReadWrite) {
         throw new Error(`File permissions are unsafe. Fix: chmod 600 '${envPath}'`);
