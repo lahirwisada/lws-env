@@ -124,6 +124,4 @@ const lwenv = (input) => {
     return filterObj(camelizedMergedEnv, keepKeys);
 };
 
-module.exports = exports = {
-    lwenv: lwenv
-  }
+module.exports = exports = lwenv
