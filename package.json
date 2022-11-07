@@ -1,0 +1,30 @@
+{
+  "author": "lahirwisada",
+  "bugs": {
+    "url": "https://github.com/lahirwisada/lws-env/issues"
+  },
+  "deprecated": false,
+  "description": "A simple npm package to demonstrate GitHub Package Registry",
+  "homepage": "https://github.com/lahirwisada/lws-env#readme",
+  "keywords": [
+    "hello",
+    "world"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@lahirwisada/lws-env",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lahirwisada/lws-env.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "envy": "^2.0.0"
+  }
+}
